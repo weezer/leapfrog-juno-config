@@ -20,9 +20,9 @@
                 "ansible_ssh_host": "172.29.238.184", 
                 "cinder_backends": {
                     "lvm": {
-                        "iscsi_ip_address": "172.29.236.140", 
+                        "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
                         "volume_backend_name": "LVM_iSCSI", 
-                        "volume_driver": "cinder.volume.drivers.lvm.LVMVolumeDriver", 
+                        "volume_driver": "cinder.volume.drivers.lvm.LVMISCSIDriver", 
                         "volume_group": "cinder-volumes"
                     }
                 }, 
@@ -73,9 +73,9 @@
                 "ansible_ssh_host": "172.29.237.138", 
                 "cinder_backends": {
                     "lvm": {
-                        "iscsi_ip_address": "172.29.236.141", 
+                        "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
                         "volume_backend_name": "LVM_iSCSI", 
-                        "volume_driver": "cinder.volume.drivers.lvm.LVMVolumeDriver", 
+                        "volume_driver": "cinder.volume.drivers.lvm.LVMISCSIDriver", 
                         "volume_group": "cinder-volumes"
                     }
                 }, 
