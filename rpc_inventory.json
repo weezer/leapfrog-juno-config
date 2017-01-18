@@ -1333,6 +1333,7 @@
                         "group_binds": [
                             "neutron_linuxbridge_agent"
                         ], 
+                        "host_bind_override": "eth12", 
                         "net_name": "flat", 
                         "type": "flat"
                     }
@@ -1368,13 +1369,13 @@
             "swift": {
                 "drives": [
                     {
-                        "name": "swift1.img"
+                        "name": "disk1"
                     }, 
                     {
-                        "name": "swift2.img"
+                        "name": "disk2"
                     }, 
                     {
-                        "name": "swift3.img"
+                        "name": "disk3"
                     }
                 ], 
                 "mount_point": "/srv", 
