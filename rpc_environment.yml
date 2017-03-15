@@ -135,7 +135,8 @@ container_skel:
     contains:
     - cinder_api
   cinder_volumes_container:
-    belongs_to:
+     is_metal: true
+     belongs_to:
     - storage_containers
     contains:
     - cinder_scheduler
