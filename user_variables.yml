@@ -1,0 +1,106 @@
+cinder_container_mysql_password: a538100a7bd3f95fce3ee7c8fbe9debbd1f007d8e73a9c0f2b8db478e
+cinder_service_password: 27929af1c1906db630646e9a5c7db58133b1e17d5c75288e0f89ad00f3
+cinder_v2_service_password: 5e786d31f9b413fa69d10630da1db922c4f9062
+cinder_service_backup_program_enabled: True
+
+container_openstack_password: 39c6fbe267d73117495b4f2180afebc182a73654b632e434d5213421e8a
+glance_container_mysql_password: 41768ad4d42ab18cc907613c3e32721fd8f5fb
+glance_default_store: swift
+glance_notification_driver: noop
+glance_service_password: f46d4e434f894a8526c5e3f3e7e168f1e6531155de1cc
+
+glance_swift_store_endpoint_type: internalURL
+glance_swift_store_auth_address: '{{ auth_identity_uri }}'
+glance_swift_store_container: glance_images
+glance_swift_store_key: '{{ glance_service_password }}'
+glance_swift_store_region: RegionOne
+glance_swift_store_user: 'service:glance'
+
+heat_auth_encryption_key: 8b597d2e8472d4016dba13fa152a15d0
+heat_cfn_service_password: c90dc78a344d9c21
+heat_container_mysql_password: 9d38ab24e6ba0fddf6efd4e8a9da06a9f74c7901ed6f
+heat_service_password: d904e7ac8ea94564d477c027ed8d2974afba775aff8dbfd047f
+heat_stack_domain_admin_password: 337d1ada71d8b74b2509f3d50739b1e40cb717e1465c1
+
+horizon_container_mysql_password: 091b406cc50f6a1db8b963570dacb6
+horizon_secret_key: d4ad136f07178f82972a11b4ddda086a
+
+keystone_auth_admin_password: f3f849f1a83acaa03fa67
+keystone_auth_admin_token: 6167392e813da5312b86dabcf7c9021be474db39c77d3bd7b6fc10775f55b55b867
+keystone_container_mysql_password: 4a83689866e9dd04c0649c91edb8834f8
+keystone_service_password: 95963acf337bca265d65
+
+kibana_password: 1df1a5453e3b918fb29ab3b0c41c
+
+maas_alarm_local_consecutive_count: 3
+maas_alarm_remote_consecutive_count: 1
+maas_api_key: '{{ rackspace_cloud_api_key }}'
+maas_api_url: https://monitoring.api.rackspacecloud.com/v1.0/{{ rackspace_cloud_tenant_id }}
+maas_auth_method: password
+maas_auth_token: some_token
+maas_auth_url: '{{ rackspace_cloud_auth_url }}'
+maas_check_period: 60
+maas_check_timeout: 30
+maas_filesystem_critical_threshold: 90.0
+maas_filesystem_warning_threshold: 80.0
+maas_keystone_password: 96f0c40ec70f71ea54713a4
+maas_keystone_user: maas
+maas_monitoring_zones:
+- mzdfw
+- mziad
+- mzord
+- mzlon
+- mzhkg
+maas_notification_plan: npManaged
+maas_rabbitmq_password: 974aed4f0e6f319047c84ceea17e0456f288478ed017ab7229e8
+maas_rabbitmq_user: maas_user
+maas_scheme: https
+maas_target_alias: public0_v4
+maas_username: '{{ rackspace_cloud_username }}'
+
+memcached_encryption_key: 567db592f81c07ec62366101
+
+mysql_root_password: 3d53a0b4b8601c8c0aa73d58904412
+innodb_buffer_pool_size: 512M
+galera_gcache_size: 50M
+
+neutron_container_mysql_password: a59f0f9d012d426601e46621539d6dac47403a5c7730587a30ecb99d
+neutron_service_password: 7117c0c8e979e6e4da4c0b45118871073a30465195ecbc9d
+
+nova_container_mysql_password: 31e97efee9b4efb6c4be0b8656ef6b92601b03d607a95
+nova_ec2_service_password: f5bd343abcb9512dc6a63bc
+nova_metadata_proxy_secret: a691f6d77cad67f6
+nova_s3_service_password: accd7253c3041cbcd03fb4c2a1d5454cc651baa9b62f9e7351d1d9d163
+nova_service_password: f82af010c7531269fe807f6
+nova_v3_service_password: f28c8fa3d8dde7f24bdb8ea5d6c5d347dd56d04ec36de180be
+
+rabbitmq_cookie_token: 27b04d819d196f4527c1e270d001cd4577a1a5199bab8739c870029935c51931d1d
+rabbitmq_password: 8d11d352438bfce39219cdc100240c52f23fe75b9dfaf2d2
+
+rackspace_cloud_api_key: SomeAPIKey
+rackspace_cloud_auth_url: https://identity.api.rackspacecloud.com/v2.0
+rackspace_cloud_password: SomeUsersPassword
+rackspace_cloud_tenant_id: SomeTenantID
+rackspace_cloud_username: SomeUserName
+
+rpc_repo_url: "http://rpc-repo.rackspace.com"
+
+required_kernel: 3.13.0-79-generic
+
+rpc_support_holland_password: 27af0d976582389c00c05319fd28c32c
+
+swift_allow_all_users: false
+swift_container_mysql_password: a8c6dba946749eaeae643d4c7372186725bc38b969c0
+swift_dispersion_password: f8a6009e8e0107d546ee9efebdf5d7
+swift_dispersion_user: dispersion
+swift_hash_path_prefix: 0e68109b7b4bf6932daa9cae
+swift_hash_path_suffix: e8010734150da2f827d569b10dbe4e23
+swift_service_password: 1903ef445c2cf99cd84a2f25443f5e7cff5872707832cd1f5283
+
+# This is being set to force the construction of the containers to use file based backends
+container_vg: NOTAVG
+
+lxc_container_backing_store: dir
+tempest_public_subnet_cidr: 172.29.248.0/22
+neutron_l2_population: True
+glance_default_store: swift
