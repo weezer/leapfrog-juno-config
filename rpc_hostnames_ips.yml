@@ -1,33 +1,25 @@
 {
     "cinder1": {
-        "ansible_ssh_host": "172.29.236.140", 
-        "container_address": "172.29.236.140"
-    }, 
-    "cinder1_cinder_volumes_container-c0caafe4": {
-        "ansible_ssh_host": "172.29.238.184", 
-        "container_address": "172.29.238.184", 
-        "storage_address": "172.29.246.128"
+        "ansible_ssh_host": "172.29.236.130", 
+        "container_address": "172.29.236.130", 
+        "storage_address": "172.29.245.81"
     }, 
     "cinder1_rsyslog_container-533542c5": {
         "ansible_ssh_host": "172.29.239.189", 
         "container_address": "172.29.239.189"
     }, 
     "cinder2": {
-        "ansible_ssh_host": "172.29.236.141", 
-        "container_address": "172.29.236.141"
-    }, 
-    "cinder2_cinder_volumes_container-0c169068": {
-        "ansible_ssh_host": "172.29.237.138", 
-        "container_address": "172.29.237.138", 
-        "storage_address": "172.29.247.231"
+        "ansible_ssh_host": "172.29.236.131", 
+        "container_address": "172.29.236.131", 
+        "storage_address": "172.29.246.85"
     }, 
     "cinder2_rsyslog_container-20ac380d": {
         "ansible_ssh_host": "172.29.237.71", 
         "container_address": "172.29.237.71"
     }, 
     "compute1": {
-        "ansible_ssh_host": "172.29.236.130", 
-        "container_address": "172.29.236.130", 
+        "ansible_ssh_host": "172.29.236.120", 
+        "container_address": "172.29.236.120", 
         "storage_address": "172.29.245.181", 
         "tunnel_address": "172.29.241.25"
     }, 
@@ -36,8 +28,8 @@
         "container_address": "172.29.239.200"
     }, 
     "compute2": {
-        "ansible_ssh_host": "172.29.236.131", 
-        "container_address": "172.29.236.131", 
+        "ansible_ssh_host": "172.29.236.121", 
+        "container_address": "172.29.236.121", 
         "storage_address": "172.29.247.181", 
         "tunnel_address": "172.29.241.200"
     }, 
@@ -331,8 +323,8 @@
         "container_address": "172.29.237.155"
     }, 
     "swift1": {
-        "ansible_ssh_host": "172.29.236.150", 
-        "container_address": "172.29.236.150"
+        "ansible_ssh_host": "172.29.236.140", 
+        "container_address": "172.29.236.140"
     }, 
     "swift1_swift_proxy_container-56ec3f83": {
         "ansible_ssh_host": "172.29.237.109", 
@@ -340,8 +332,8 @@
         "storage_address": "172.29.246.54"
     }, 
     "swift2": {
-        "ansible_ssh_host": "172.29.236.151", 
-        "container_address": "172.29.236.151"
+        "ansible_ssh_host": "172.29.236.141", 
+        "container_address": "172.29.236.141"
     }, 
     "swift2_swift_proxy_container-de1072fd": {
         "ansible_ssh_host": "172.29.238.109", 
@@ -349,8 +341,8 @@
         "storage_address": "172.29.245.6"
     }, 
     "swift3": {
-        "ansible_ssh_host": "172.29.236.152", 
-        "container_address": "172.29.236.152"
+        "ansible_ssh_host": "172.29.236.142", 
+        "container_address": "172.29.236.142"
     }, 
     "swift3_swift_proxy_container-025cf7ca": {
         "ansible_ssh_host": "172.29.239.45", 
