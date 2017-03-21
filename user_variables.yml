@@ -100,7 +100,10 @@ swift_service_password: 1903ef445c2cf99cd84a2f25443f5e7cff5872707832cd1f5283
 # This is being set to force the construction of the containers to use file based backends
 container_vg: NOTAVG
 
+<<<<<<< HEAD
 lxc_container_backing_store: dir
 tempest_public_subnet_cidr: 172.29.248.0/22
 neutron_l2_population: True
 glance_default_store: swift
+=======
+>>>>>>> master

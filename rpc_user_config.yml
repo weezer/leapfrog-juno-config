@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 environment_version: 2748b2b9208b7a274607aa05b51c756e 
+=======
+environment_version: 3511a43b8e4cc39af4beaaa852b5f917
+>>>>>>> master
 
 cidr_networks:
   container: 172.29.236.0/22
@@ -73,6 +77,7 @@ infra_hosts:
 
 compute_hosts:
   compute1:
+<<<<<<< HEAD
     ip: 172.29.236.120
   compute2:
     ip: 172.29.236.121
@@ -82,15 +87,34 @@ storage_hosts:
     ip: 172.29.236.131
     container_vars:
       cinder_backends:
+=======
+    ip: 172.29.236.130
+  compute2:
+    ip: 172.29.236.131
+
+storage_hosts:
+  cinder2:
+    ip: 172.29.236.141
+    container_vars:
+      cinder_backends:
+        limit_container_types: cinder_volume
+>>>>>>> master
         lvm:
           volume_group: cinder-volumes
           volume_driver: cinder.volume.drivers.lvm.LVMISCSIDriver
           volume_backend_name: LVM_iSCSI
           iscsi_ip_address: "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}"
   cinder1:
+<<<<<<< HEAD
     ip: 172.29.236.130
     container_vars:
       cinder_backends:
+=======
+    ip: 172.29.236.140
+    container_vars:
+      cinder_backends:
+        limit_container_types: cinder_volume
+>>>>>>> master
         lvm:
           volume_group: cinder-volumes
           volume_driver: cinder.volume.drivers.lvm.LVMISCSIDriver

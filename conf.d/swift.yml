@@ -18,7 +18,11 @@ global_overrides:
 
 swift-proxy_hosts:
   swift1:
+<<<<<<< HEAD
     ip: 172.29.236.140
+=======
+    ip: 172.29.236.150
+>>>>>>> master
     container_vars:
       swift_proxy_vars:
         limit_container_types: swift_proxy
@@ -26,7 +30,11 @@ swift-proxy_hosts:
         write_affinity: "r1"
         write_affinity_node_count: "1 * replicas"
   swift3:
+<<<<<<< HEAD
     ip: 172.29.236.142
+=======
+    ip: 172.29.236.152
+>>>>>>> master
     container_vars:
       swift_proxy_vars:
         limit_container_types: swift_proxy
@@ -34,7 +42,11 @@ swift-proxy_hosts:
         write_affinity: "r1"
         write_affinity_node_count: "1 * replicas"
   swift2:
+<<<<<<< HEAD
     ip: 172.29.236.141
+=======
+    ip: 172.29.236.151
+>>>>>>> master
     container_vars:
       swift_proxy_vars:
         limit_container_types: swift_proxy
@@ -44,21 +56,33 @@ swift-proxy_hosts:
 
 swift_hosts:
   swift1:
+<<<<<<< HEAD
     ip: 172.29.236.140
+=======
+    ip: 172.29.236.150
+>>>>>>> master
     container_vars:
       swift_vars:
         limit_container_types: swift
         zone: 0
         region: 1
   swift3:
+<<<<<<< HEAD
     ip: 172.29.236.142
+=======
+    ip: 172.29.236.152
+>>>>>>> master
     container_vars:
       swift_vars:
         limit_container_types: swift
         zone: 0
         region: 1
   swift2:
+<<<<<<< HEAD
     ip: 172.29.236.141
+=======
+    ip: 172.29.236.151
+>>>>>>> master
     container_vars:
       swift_vars:
         limit_container_types: swift

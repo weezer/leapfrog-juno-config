@@ -2,17 +2,12 @@
     "_meta": {
         "hostvars": {
             "cinder1": {
+<<<<<<< HEAD
                 "ansible_ssh_host": "172.29.236.130", 
-                "cinder_backends": {
-                    "lvm": {
-                        "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
-                        "volume_backend_name": "LVM_iSCSI", 
-                        "volume_driver": "cinder.volume.drivers.lvm.LVMISCSIDriver", 
-                        "volume_group": "cinder-volumes"
-                    }
-                }, 
-                "component": "cinder_volume", 
-                "container_address": "172.29.236.130", 
+=======
+                "ansible_ssh_host": "172.29.236.140", 
+                "component": null, 
+                "container_address": "172.29.236.140", 
                 "container_name": "cinder1", 
                 "container_netmask": "255.255.252.0", 
                 "container_network": {
@@ -22,12 +17,11 @@
                 }, 
                 "container_types": "cinder1_containers", 
                 "is_metal": true, 
-                "physical_host": "cinder1", 
-                "storage_address": "172.29.245.81", 
-                "storage_netmask": "255.255.252.0"
+                "physical_host": "cinder1"
             }, 
-            "cinder1_rsyslog_container-533542c5": {
-                "ansible_ssh_host": "172.29.239.189", 
+            "cinder1_cinder_volumes_container-c0caafe4": {
+                "ansible_ssh_host": "172.29.238.184", 
+>>>>>>> master
                 "cinder_backends": {
                     "lvm": {
                         "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
@@ -36,6 +30,46 @@
                         "volume_group": "cinder-volumes"
                     }
                 }, 
+<<<<<<< HEAD
+                "component": "cinder_volume", 
+                "container_address": "172.29.236.130", 
+                "container_name": "cinder1", 
+=======
+                "component": "cinder_scheduler", 
+                "container_address": "172.29.238.184", 
+                "container_name": "cinder1_cinder_volumes_container-c0caafe4", 
+>>>>>>> master
+                "container_netmask": "255.255.252.0", 
+                "container_network": {
+                    "container_bridge": "br-mgmt", 
+                    "container_interface": "eth1", 
+                    "container_netmask": "255.255.252.0"
+                }, 
+<<<<<<< HEAD
+                "container_types": "cinder1_containers", 
+                "is_metal": true, 
+                "physical_host": "cinder1", 
+                "storage_address": "172.29.245.81", 
+=======
+                "is_metal": false, 
+                "physical_host": "cinder1", 
+                "storage_address": "172.29.246.128", 
+>>>>>>> master
+                "storage_netmask": "255.255.252.0"
+            }, 
+            "cinder1_rsyslog_container-533542c5": {
+                "ansible_ssh_host": "172.29.239.189", 
+<<<<<<< HEAD
+                "cinder_backends": {
+                    "lvm": {
+                        "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
+                        "volume_backend_name": "LVM_iSCSI", 
+                        "volume_driver": "cinder.volume.drivers.lvm.LVMISCSIDriver", 
+                        "volume_group": "cinder-volumes"
+                    }
+                }, 
+=======
+>>>>>>> master
                 "component": "rsyslog", 
                 "container_address": "172.29.239.189", 
                 "container_name": "cinder1_rsyslog_container-533542c5", 
@@ -49,17 +83,12 @@
                 "physical_host": "cinder1"
             }, 
             "cinder2": {
+<<<<<<< HEAD
                 "ansible_ssh_host": "172.29.236.131", 
-                "cinder_backends": {
-                    "lvm": {
-                        "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
-                        "volume_backend_name": "LVM_iSCSI", 
-                        "volume_driver": "cinder.volume.drivers.lvm.LVMISCSIDriver", 
-                        "volume_group": "cinder-volumes"
-                    }
-                }, 
-                "component": "cinder_volume", 
-                "container_address": "172.29.236.131", 
+=======
+                "ansible_ssh_host": "172.29.236.141", 
+                "component": null, 
+                "container_address": "172.29.236.141", 
                 "container_name": "cinder2", 
                 "container_netmask": "255.255.252.0", 
                 "container_network": {
@@ -69,12 +98,11 @@
                 }, 
                 "container_types": "cinder2_containers", 
                 "is_metal": true, 
-                "physical_host": "cinder2", 
-                "storage_address": "172.29.246.85", 
-                "storage_netmask": "255.255.252.0"
+                "physical_host": "cinder2"
             }, 
-            "cinder2_rsyslog_container-20ac380d": {
-                "ansible_ssh_host": "172.29.237.71", 
+            "cinder2_cinder_volumes_container-0c169068": {
+                "ansible_ssh_host": "172.29.237.138", 
+>>>>>>> master
                 "cinder_backends": {
                     "lvm": {
                         "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
@@ -83,6 +111,46 @@
                         "volume_group": "cinder-volumes"
                     }
                 }, 
+<<<<<<< HEAD
+                "component": "cinder_volume", 
+                "container_address": "172.29.236.131", 
+                "container_name": "cinder2", 
+=======
+                "component": "cinder_scheduler", 
+                "container_address": "172.29.237.138", 
+                "container_name": "cinder2_cinder_volumes_container-0c169068", 
+>>>>>>> master
+                "container_netmask": "255.255.252.0", 
+                "container_network": {
+                    "container_bridge": "br-mgmt", 
+                    "container_interface": "eth1", 
+                    "container_netmask": "255.255.252.0"
+                }, 
+<<<<<<< HEAD
+                "container_types": "cinder2_containers", 
+                "is_metal": true, 
+                "physical_host": "cinder2", 
+                "storage_address": "172.29.246.85", 
+=======
+                "is_metal": false, 
+                "physical_host": "cinder2", 
+                "storage_address": "172.29.247.231", 
+>>>>>>> master
+                "storage_netmask": "255.255.252.0"
+            }, 
+            "cinder2_rsyslog_container-20ac380d": {
+                "ansible_ssh_host": "172.29.237.71", 
+<<<<<<< HEAD
+                "cinder_backends": {
+                    "lvm": {
+                        "iscsi_ip_address": "{{ hostvars[inventory_hostname]['storage_address'] | default(hostvars[inventory_hostname]['storage_address']) }}", 
+                        "volume_backend_name": "LVM_iSCSI", 
+                        "volume_driver": "cinder.volume.drivers.lvm.LVMISCSIDriver", 
+                        "volume_group": "cinder-volumes"
+                    }
+                }, 
+=======
+>>>>>>> master
                 "component": "rsyslog", 
                 "container_address": "172.29.237.71", 
                 "container_name": "cinder2_rsyslog_container-20ac380d", 
@@ -96,9 +164,15 @@
                 "physical_host": "cinder2"
             }, 
             "compute1": {
+<<<<<<< HEAD
                 "ansible_ssh_host": "172.29.236.120", 
                 "component": "nova_compute", 
                 "container_address": "172.29.236.120", 
+=======
+                "ansible_ssh_host": "172.29.236.130", 
+                "component": "nova_compute", 
+                "container_address": "172.29.236.130", 
+>>>>>>> master
                 "container_name": "compute1", 
                 "container_netmask": "255.255.252.0", 
                 "container_network": {
@@ -129,9 +203,15 @@
                 "physical_host": "compute1"
             }, 
             "compute2": {
+<<<<<<< HEAD
                 "ansible_ssh_host": "172.29.236.121", 
                 "component": "nova_compute", 
                 "container_address": "172.29.236.121", 
+=======
+                "ansible_ssh_host": "172.29.236.131", 
+                "component": "nova_compute", 
+                "container_address": "172.29.236.131", 
+>>>>>>> master
                 "container_name": "compute2", 
                 "container_netmask": "255.255.252.0", 
                 "container_network": {
@@ -1149,9 +1229,15 @@
                 "physical_host": "logging1"
             }, 
             "swift1": {
+<<<<<<< HEAD
                 "ansible_ssh_host": "172.29.236.140", 
                 "component": "swift_cont", 
                 "container_address": "172.29.236.140", 
+=======
+                "ansible_ssh_host": "172.29.236.150", 
+                "component": "swift_cont", 
+                "container_address": "172.29.236.150", 
+>>>>>>> master
                 "container_name": "swift1", 
                 "container_netmask": "255.255.252.0", 
                 "container_network": {
@@ -1193,9 +1279,15 @@
                 }
             }, 
             "swift2": {
+<<<<<<< HEAD
                 "ansible_ssh_host": "172.29.236.141", 
                 "component": "swift_cont", 
                 "container_address": "172.29.236.141", 
+=======
+                "ansible_ssh_host": "172.29.236.151", 
+                "component": "swift_cont", 
+                "container_address": "172.29.236.151", 
+>>>>>>> master
                 "container_name": "swift2", 
                 "container_netmask": "255.255.252.0", 
                 "container_network": {
@@ -1237,9 +1329,15 @@
                 }
             }, 
             "swift3": {
+<<<<<<< HEAD
                 "ansible_ssh_host": "172.29.236.142", 
                 "component": "swift_cont", 
                 "container_address": "172.29.236.142", 
+=======
+                "ansible_ssh_host": "172.29.236.152", 
+                "component": "swift_cont", 
+                "container_address": "172.29.236.152", 
+>>>>>>> master
                 "container_name": "swift3", 
                 "container_netmask": "255.255.252.0", 
                 "container_network": {
@@ -1397,11 +1495,19 @@
     }, 
     "cinder1_containers": {
         "hosts": [
+<<<<<<< HEAD
+=======
+            "cinder1_cinder_volumes_container-c0caafe4", 
+>>>>>>> master
             "cinder1_rsyslog_container-533542c5"
         ]
     }, 
     "cinder2_containers": {
         "hosts": [
+<<<<<<< HEAD
+=======
+            "cinder2_cinder_volumes_container-0c169068", 
+>>>>>>> master
             "cinder2_rsyslog_container-20ac380d"
         ]
     }, 
@@ -1431,19 +1537,36 @@
     "cinder_scheduler": {
         "children": [], 
         "hosts": [
+<<<<<<< HEAD
             "cinder2", 
             "cinder1"
+=======
+            "cinder2_cinder_volumes_container-0c169068", 
+            "cinder1_cinder_volumes_container-c0caafe4"
+>>>>>>> master
         ]
     }, 
     "cinder_volume": {
         "children": [], 
         "hosts": [
+<<<<<<< HEAD
             "cinder2", 
             "cinder1"
         ]
     }, 
     "cinder_volumes_container": {
         "hosts": []
+=======
+            "cinder2_cinder_volumes_container-0c169068", 
+            "cinder1_cinder_volumes_container-c0caafe4"
+        ]
+    }, 
+    "cinder_volumes_container": {
+        "hosts": [
+            "cinder2_cinder_volumes_container-0c169068", 
+            "cinder1_cinder_volumes_container-c0caafe4"
+        ]
+>>>>>>> master
     }, 
     "compute1_containers": {
         "hosts": [
@@ -2187,7 +2310,13 @@
     "storage_all": {
         "hosts": [
             "cinder2", 
+<<<<<<< HEAD
             "cinder1", 
+=======
+            "cinder2_cinder_volumes_container-0c169068", 
+            "cinder1", 
+            "cinder1_cinder_volumes_container-c0caafe4", 
+>>>>>>> master
             "cinder2_rsyslog_container-20ac380d", 
             "cinder1_rsyslog_container-533542c5"
         ]
