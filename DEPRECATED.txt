@@ -1,0 +1,1 @@
+This directory have been deprecated please navigate to "/etc/openstack_deploy"
